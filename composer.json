@@ -1,0 +1,36 @@
+{
+    "name": "smileofninja/GoogleCloudMessages",
+    "description": "PHP, Laravel, LumenGoogle Gloud Cloud Messaging Micro Services, an alternative to Iron.io",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kumar",
+            "email": "smileofninja@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1",
+        "mockery/mockery": "0.9.*",
+        "illuminate/http": "^5.1",
+        "illuminate/config": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gcloud\\GooglePubSub\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gcloud\\GooglePubSub\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
